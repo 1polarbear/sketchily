@@ -1,3 +1,4 @@
+//= require svg-edit-2.6/pathseg
 //= require svg-edit-2.6/jquery
 //= require svg-edit-2.6/js-hotkeys/jquery.hotkeys.min
 //= require svg-edit-2.6/jquerybbq/jquery.bbq.min
