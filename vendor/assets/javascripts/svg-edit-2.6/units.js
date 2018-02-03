@@ -31,7 +31,8 @@ var unitNumMap = {
 	'mm': 7,
 	'in': 8,
 	'pt': 9,
-	'pc': 10
+	'pc': 10,
+	'ft': 11
 };
 
 $.merge(unit_attrs, h_attrs);
@@ -86,6 +87,7 @@ svgedit.units.init = function(elementContainer) {
 	typeMap_['pt'] = inch / 72;
 	typeMap_['pc'] = inch / 6;
 	typeMap_['%'] = 0;
+	typeMap_['ft'] = inch * 12;
 };
 
 // Group: Unit conversion functions

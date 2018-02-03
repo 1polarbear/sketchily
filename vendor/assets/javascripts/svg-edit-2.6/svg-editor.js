@@ -63,7 +63,7 @@
 				colorPickerCSS: null,
 				gridSnapping: false,
 				gridColor: "#000",
-				baseUnit: 'px',
+				baseUnit: 'ft',
 				snappingStep: 10,
 				showRulers: true
 			},
