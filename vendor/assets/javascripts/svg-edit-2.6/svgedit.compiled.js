@@ -8238,7 +8238,7 @@ $.SvgCanvas = function(a, K) {
                         if (Q) S.fillText(fa +" "+f.baseUnit, Ka + 2, 8);
                         else {
                             Aa = (fa + "").split("");
-                            for (fa = 0; fa < Aa.length; fa++) S.fillText(Aa[fa] +" "+f.baseUnit,
+                            for (fa = 0; fa < Aa.length; fa++) S.fillText(Aa[fa],
                                 1, Ka + 9 + fa * 9)
                         }
                         Aa = Ea / 10;
