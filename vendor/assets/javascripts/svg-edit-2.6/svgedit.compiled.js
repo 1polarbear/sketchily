@@ -631,12 +631,12 @@ svgedit = svgedit || {};
         v.em = f.width;
         v.ex = f.height;
         v["in"] = e;
-        v.cm = e / 2.54;
+        v.ft = e / 2.54;
         v.mm = e / 25.4;
         v.pt = e / 72;
         v.pc = e / 6;
         v["%"] = 0;
-        v.ft = e / 30.48;
+        v.cm = e / 30.48;
     };
     svgedit.units.getTypeMap = function() {
         return v
@@ -8016,7 +8016,7 @@ $.SvgCanvas = function(a, K) {
                 colorPickerCSS: null,
                 gridSnapping: false,
                 gridColor: "#000",
-                baseUnit: "cm",
+                baseUnit: "ft",
                 snappingStep: 10,
                 showRulers: true
             },
@@ -8235,10 +8235,10 @@ $.SvgCanvas = function(a, K) {
                             fa = Aa.toFixed(fa) - 0
                         }
                         if (fa !== 0 && fa !== 1E3 && fa % 1E3 === 0) fa = fa / 1E3 + "K";
-                        if (Q) S.fillText(fa, Ka + 2, 8);
+                        if (Q) S.fillText(fa +" "+f.baseUnit, Ka + 2, 8);
                         else {
                             Aa = (fa + "").split("");
-                            for (fa = 0; fa < Aa.length; fa++) S.fillText(Aa[fa],
+                            for (fa = 0; fa < Aa.length; fa++) S.fillText(Aa[fa] +" "+f.baseUnit,
                                 1, Ka + 9 + fa * 9)
                         }
                         Aa = Ea / 10;
